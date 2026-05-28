@@ -16,7 +16,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,600;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -31,10 +31,8 @@
             'c-crm':'#f5efe6','c-wht':'#fdf8f2','c-bdr':'#3a2e24',
           },
           fontFamily: {
-            sans: ['Inter','sans-serif'],
+            sans: ['"Bebas Neue"','sans-serif'],
             bebas: ['"Bebas Neue"','sans-serif'],
-            sign: ['SignPainter','"SignPainter HouseScript"','cursive'],
-            cormorant: ['"Cormorant Garamond"','serif'],
           },
         }
       }
@@ -96,7 +94,7 @@
     <div class="mobile-menu-panel fixed top-0 right-0 bottom-0 w-[min(320px,85vw)] bg-c-drk z-[400] flex flex-col"
          id="mobileMenu" role="dialog" aria-label="Menu principal" aria-modal="true">
         <div class="flex items-center justify-between px-6 py-5 border-b border-white/[.08]">
-            <a href="index.html" class="font-sign text-[1.2rem] tracking-[.03em] text-c-wht flex items-center gap-[.5rem] no-underline" aria-label="Retour à l'accueil">
+            <a href="index.html" class="font-bebas text-[1.2rem] tracking-[.03em] text-c-wht flex items-center gap-[.5rem] no-underline" aria-label="Retour à l'accueil">
                 <img src="logo.svg" alt="" class="w-[38px] h-[38px] flex-shrink-0 drop-shadow-[0_2px_8px_rgba(0,0,0,.4)]" aria-hidden="true">
                 Les Héros de l'Ombre
             </a>
@@ -114,7 +112,7 @@
     <!-- ════ NAV ════ -->
     <header class="sticky top-0 z-[200] bg-c-wht border-b border-c-bdr flex items-center justify-between px-10 h-[58px] max-[540px]:px-5 transition duration-300" id="mainNav">
 
-        <a class="font-sign text-[1.35rem] tracking-[.03em] flex items-center gap-[.5rem] flex-shrink-0 group"
+        <a class="font-bebas text-[1.35rem] tracking-[.03em] flex items-center gap-[.5rem] flex-shrink-0 group"
            href="index.html" aria-label="Retour à l'accueil">
             <img src="logo.svg" alt="" class="w-[34px] h-[34px] flex-shrink-0 drop-shadow-[0_1px_8px_rgba(0,0,0,.2)] transition duration-[350ms] group-hover:scale-110 group-hover:-rotate-[5deg]" aria-hidden="true">
             Les Héros de l'Ombre
@@ -147,8 +145,8 @@
             <span class="inline-flex items-center gap-[.6rem] text-c-gold text-[.6rem] font-bold tracking-[.28em] uppercase mb-6">
                 <span class="w-6 h-px bg-c-gold/[.5]"></span>On est à l'écoute<span class="w-6 h-px bg-c-gold/[.5]"></span>
             </span>
-            <h1 class="font-sign text-[clamp(3.2rem,7vw,6rem)] tracking-[.02em] leading-none mb-6">Nous Contacter</h1>
-            <p class="font-cormorant italic font-normal text-[clamp(1rem,2vw,1.28rem)] text-c-wht/[.6] max-w-[500px] mx-auto">Une suggestion, un partenariat, une question — écris-nous, on lit tout.</p>
+            <h1 class="font-bebas text-[clamp(3.2rem,7vw,6rem)] tracking-[.02em] leading-none mb-6">Nous Contacter</h1>
+            <p class="font-bebas italic font-normal text-[clamp(1rem,2vw,1.28rem)] text-c-wht/[.6] max-w-[500px] mx-auto">Une suggestion, un partenariat, une question — écris-nous, on lit tout.</p>
         </div>
     </div>
 
@@ -351,7 +349,7 @@
 
     <!-- ════ QUOTE ════ -->
     <div class="bg-c-crm border-t border-c-bdr border-b text-center px-[clamp(1.5rem,5vw,4rem)] py-[clamp(2.5rem,5vw,4.5rem)]">
-        <blockquote class="font-cormorant italic font-normal text-[clamp(1.1rem,2.5vw,1.45rem)] text-c-gry max-w-[620px] mx-auto mb-[.8rem]">« Un personnage secondaire bien écrit en dit plus sur un film que n'importe quel héros. »</blockquote>
+        <blockquote class="font-bebas italic font-normal text-[clamp(1.1rem,2.5vw,1.45rem)] text-c-gry max-w-[620px] mx-auto mb-[.8rem]">« Un personnage secondaire bien écrit en dit plus sur un film que n'importe quel héros. »</blockquote>
         <cite class="text-[.6rem] font-bold tracking-[.22em] uppercase text-c-glt2 not-italic">— Les Héros de l'Ombre</cite>
     </div>
 
@@ -359,7 +357,7 @@
     <footer class="bg-c-drk text-c-wht/[.45] grid [grid-template-columns:1.6fr_1fr] gap-12 px-[clamp(1.5rem,5vw,4rem)] py-[clamp(3rem,6vw,5rem)] max-[680px]:grid-cols-1 max-[680px]:gap-8">
 
         <div>
-            <a href="index.html" class="font-sign text-[1.4rem] tracking-[.03em] text-c-wht mb-3 flex items-center gap-[.5rem] no-underline group" aria-label="Retour à l'accueil">
+            <a href="index.html" class="font-bebas text-[1.4rem] tracking-[.03em] text-c-wht mb-3 flex items-center gap-[.5rem] no-underline group" aria-label="Retour à l'accueil">
                 <img src="logo.svg" alt="" class="w-[34px] h-[34px] flex-shrink-0 drop-shadow-[0_1px_8px_rgba(0,0,0,.4)] transition duration-300 group-hover:scale-[1.08] group-hover:-rotate-[5deg]" aria-hidden="true">
                 Les Héros de l'Ombre
             </a>
