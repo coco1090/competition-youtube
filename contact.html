@@ -468,25 +468,6 @@
         if (!message || message.length < 10) { showToast('⚠ Le message est trop court'); return; }
         if (!rgpd) { showToast("⚠ Merci d'accepter la politique de confidentialité"); return; }
 
-        const tel   = document.getElementById('cf-tel').value.trim();
-        const corps = [
-            'Prénom : '    + prenom,
-            'Nom : '       + nom,
-            'Email : '     + email,
-            'Téléphone : ' + (tel || 'Non renseigné'),
-            'Sujet : '     + sujet,
-            '',
-            'Message :',
-            message
-        ].join('\n');
-
-        window.open(
-            'mailto:lesoublies8@gmail.com'
-            + '?subject=' + encodeURIComponent("Message — Les Héros de l'Ombre [" + sujet + ']')
-            + '&body='    + encodeURIComponent(corps),
-            '_self'
-        );
-
         document.getElementById('contactForm').style.display = 'none';
         const success = document.getElementById('formSuccess');
         success.classList.add('show');
